@@ -38,8 +38,8 @@ def update_db(c, device):
                 temperature, humidity)
                   VALUES(?,?,?,?,?)''',
                   (device['sensor_id'],
-                   device['timestamp'],
                    device['name'],
+                   device['timestamp'],
                    device['temperature'],
                    device['humidity'])) 
 
